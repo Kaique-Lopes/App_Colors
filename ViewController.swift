@@ -13,6 +13,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var btnYellow: UIButton!
     @IBOutlet weak var btnRed: UIButton!
     @IBOutlet weak var btnBlack: UIButton!
+    @IBOutlet weak var slSlider: UISlider!
     
     override func viewDidLoad() {
         vi.backgroundColor = .systemGray
@@ -45,5 +46,8 @@ class ViewController: UIViewController {
         vi.backgroundColor = .systemGray
     }
     
-
+    @IBAction func slider(_ sender: Any) {
+        
+    }
+    
 }
