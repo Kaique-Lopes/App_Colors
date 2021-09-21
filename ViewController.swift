@@ -21,8 +21,8 @@ class ViewController: UIViewController {
         btnYellow.tintColor = .yellow
         btnRed.tintColor = .red
         btnBlack.tintColor = .black
-        slSlider.minimumValue = 1
-        slSlider.maximumValue = 2
+        slSlider.minimumValue = 0
+        slSlider.maximumValue = 1
         super.viewDidLoad()
     }
     
@@ -48,6 +48,7 @@ class ViewController: UIViewController {
     }
     
     @IBAction func slider(_ sender: Any) {
+        print("Cheguei aqui")
         
     }
     
