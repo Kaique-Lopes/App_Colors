@@ -20,21 +20,33 @@
                                 <rect key="frame" x="86" y="75" width="57" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Amarelo"/>
+                                <connections>
+                                    <action selector="btColorYellow:" destination="BYZ-38-t0r" eventType="touchUpInside" id="oi3-GM-R2x"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JcH-kW-gey">
                                 <rect key="frame" x="179" y="75" width="66" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Vermelho"/>
+                                <connections>
+                                    <action selector="btColorRed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fc3-ke-BtG"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="utt-cK-kGL">
                                 <rect key="frame" x="283" y="75" width="37" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Preto"/>
+                                <connections>
+                                    <action selector="btColorBlack:" destination="BYZ-38-t0r" eventType="touchUpInside" id="XMc-w5-ef1"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dcg-ez-Ptx">
                                 <rect key="frame" x="181" y="581" width="53" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Resetar"/>
+                                <connections>
+                                    <action selector="resetColors:" destination="BYZ-38-t0r" eventType="touchUpInside" id="yNd-8V-QNj"/>
+                                </connections>
                             </button>
                             <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="pey-uL-EeP">
                                 <rect key="frame" x="18" y="637" width="378" height="30"/>
@@ -45,10 +57,24 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemBlueColor"/>
                             </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HBX-E7-6gm">
+                                <rect key="frame" x="151" y="150" width="112" height="61"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
+                    <connections>
+                        <outlet property="btnBlack" destination="utt-cK-kGL" id="SBK-fV-eIr"/>
+                        <outlet property="btnRed" destination="JcH-kW-gey" id="6Gg-fk-slj"/>
+                        <outlet property="btnYellow" destination="Tpe-7N-I59" id="nOz-Qt-6ni"/>
+                        <outlet property="label" destination="HBX-E7-6gm" id="6Yt-xl-aSJ"/>
+                        <outlet property="vi" destination="Zi3-o3-ZPm" id="JUL-HK-LfG"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
