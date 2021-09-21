@@ -48,8 +48,8 @@ class ViewController: UIViewController {
     }
     
     @IBAction func slider(_ sender: Any) {
-        print("Cheguei aqui")
-        
+        print(slSlider.value)
+        vi.alpha = CGFloat(slSlider.value)
     }
     
 }
