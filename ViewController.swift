@@ -21,7 +21,8 @@ class ViewController: UIViewController {
         btnYellow.tintColor = .yellow
         btnRed.tintColor = .red
         btnBlack.tintColor = .black
-
+        slSlider.minimumValue = 1
+        slSlider.maximumValue = 2
         super.viewDidLoad()
     }
     
